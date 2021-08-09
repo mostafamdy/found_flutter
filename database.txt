@@ -1,0 +1,46 @@
+use MeQbsrH4lx;
+SHOW tables; 
+select * from imageTest;
+select * from childNotFound;
+select * from childFounded; 
+select * from someOne;
+select *from  IDs;
+select *from parent;
+select *from results
+create table IDs(childNotFound int, childFound int, parent int, someone int, che int);
+create table childNotFound(ChildID int,Name varchar(50),Age int,Description varchar(255), Location varchar(50),Image mediumtext);
+create table childFounded(ChildID int,Name varchar(50),Location varchar(50),Description varchar(255),age int,Image mediumtext);
+create table results(FoundID int,NotFoundID int);
+
+
+drop table someOne;
+drop table parent
+select*from IDs;
+update IDs set che = 1 ;
+
+truncate table childNotFound;
+truncate table childFounded
+
+truncate table IDs
+
+drop table IDs;
+truncate table childFounded;
+
+truncate table IDs;
+truncate table results
+insert into IDs(childNotFound,childFound,parent,someone,che) Values(1,1,1,1,0);
+insert into childNotFound (Name , Age , Description , Location , Image ,ChildID) Values('test',0,'test','test','test',1);
+insert into childFounded (Name , Age , Description , Location , Image ,ChildID) Values('test',0,'test','test','test',1);
+
+CREATE TABLE IF NOT EXISTS parent(ChildID int,Name varchar(55), NationalId varchar(100), IdPhoto MEDIUMTEXT) ;
+CREATE TABLE IF NOT EXISTS someOne(ChildID int ,Name varchar(55), Phone varchar(50)) ;
+
+
+truncate table imageTest;
+CREATE TABLE IF NOT EXISTS imageTest(image MEDIUMTEXT, indx varchar(3), typ varchar(50), id varchar(3)) ;
+drop table childFounded
+drop table imageTest;
+truncate table imageTest;
+truncate table childNotFound;
+truncate table childFounded;
+truncate table IDs
